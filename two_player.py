@@ -10,7 +10,7 @@ pygame.display.set_caption("Pong")
 
 fps = 60
 
-def main():
+def main_2_player(main_menu):
     run = True
     clock = pygame.time.Clock()
 
@@ -56,6 +56,7 @@ def main():
             window.blit(text, (width // 2 - text.get_width() // 2, height // 2 - text.get_height() // 2))
             pygame.display.update()
             pygame.time.delay(5000)
+            main_menu()
             ball.reset()
             left_paddle.reset()
             right_paddle.reset()
@@ -63,6 +64,3 @@ def main():
             right_score = 0
 
     pygame.quit()
-
-if __name__ == "__main__":
-    main()
