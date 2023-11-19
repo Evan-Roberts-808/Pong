@@ -13,11 +13,11 @@ This project is my submission for the Weekly Coding Challenge #36, where the goa
 
 ## Getting Started
 To run the Pong game on your local machine, follow these steps:
-
-1. Choose your preferred programming language and development environment.
+instructions to come once complete
+<!-- 1. Choose your preferred programming language and development environment.
 2. Clone this repository to your local machine.
 3. Install the required dependencies (e.g., Pygame for Python).
-4. Run the main game file.
+4. Run the main game file. -->
 
 ## Features
 - Interactive Pong game featuring both single player against ai and two player.
