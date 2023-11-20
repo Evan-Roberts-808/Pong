@@ -28,7 +28,7 @@ class Paddle:
 
 class Ball:
     color = (255, 255, 255)
-    max_velocity = 7
+    max_velocity = 10
 
     def __init__(self, x, y, radius):
         self.x = self.original_x = x

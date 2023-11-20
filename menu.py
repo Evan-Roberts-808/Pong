@@ -5,23 +5,35 @@ pygame.init()
 
 width, height = 1200, 900
 window = pygame.display.set_mode((width, height))
-pygame.display.set_caption("Pong - Main Menu")
+pygame.display.set_caption("Pong")
 
 title_font = pygame.font.SysFont("impact", 100)
 font = pygame.font.SysFont("arial", 50)
+control_font = pygame.font.SysFont("arial", 30)
 
 title = title_font.render("Pong", 1, (255, 255, 255))
 one_player_text = font.render("1 Player", 1, (255, 255, 255))
 two_player_text = font.render("2 Players", 1, (255, 255, 255))
+controls_title = control_font.render("Controls", 1, (255, 255, 255))
+p1_controls = control_font.render("P1: W: Move Up, S: Move Down", 1, (255, 255, 255))
+p2_controls = control_font.render("P2: Up Arrow: Move Up, Down Arrow: Move Down", 1, (255, 255, 255))
+
 
 def draw_menu():
     window.fill((0, 0, 0))
 
     window.blit(title, (width // 2 - title.get_width() // 2, 50))
-    window.blit(one_player_text, (width // 2 - one_player_text.get_width() // 2, height // 3))
-    window.blit(two_player_text, (width // 2 - two_player_text.get_width() // 2, 2 * height // 3))
+    window.blit(one_player_text, (width // 2 -
+                one_player_text.get_width() // 2, height // 3))
+    window.blit(two_player_text, (width // 2 -
+                two_player_text.get_width() // 2, 2 * height // 3))
+    window.blit(controls_title, (width // 2 -
+                controls_title.get_width() // 2, 700))
+    window.blit(p1_controls, (width // 2 - p1_controls.get_width() // 2, 750))
+    window.blit(p2_controls, (width // 2 - p2_controls.get_width() // 2, 790))
 
     pygame.display.update()
+
 
 def main_menu():
     run_menu = True
@@ -44,6 +56,7 @@ def main_menu():
                     main_2_player(main_menu)
 
     pygame.quit()
+
 
 if __name__ == "__main__":
     main_menu()
