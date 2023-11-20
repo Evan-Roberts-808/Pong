@@ -58,7 +58,7 @@ def handle_collision(window, ball, left_paddle, right_paddle, window_height, lef
 
     return left_score, right_score
 
-def handle_paddle_movement(keys, left_paddle, right_paddle, window_height):
+def handle_paddle_movement(keys, left_paddle, right_paddle, window_height, ai_paddle=None):
     if keys[pygame.K_w] and left_paddle.y - left_paddle.velocity >= 0:
         left_paddle.move(up=True)
     if keys[pygame.K_s] and left_paddle.y + left_paddle.velocity + left_paddle.height <= window_height:
@@ -68,3 +68,9 @@ def handle_paddle_movement(keys, left_paddle, right_paddle, window_height):
         right_paddle.move(up=True)
     if keys[pygame.K_DOWN] and right_paddle.y + right_paddle.velocity + right_paddle.height <= window_height:
         right_paddle.move(up=False)
+
+    if ai_paddle:
+        if ai_paddle.y - ai_paddle.velocity >= 0:
+            ai_paddle.move(up=True)
+        if ai_paddle.y + ai_paddle.velocity + ai_paddle.height <= window_height:
+            ai_paddle.move(up=False)
