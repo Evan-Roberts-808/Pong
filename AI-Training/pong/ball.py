@@ -5,7 +5,7 @@ import random
 
 class Ball:
     MAX_VEL = 10
-    RADIUS = 7
+    RADIUS = 10
 
     def __init__(self, x, y):
         self.x = self.original_x = x

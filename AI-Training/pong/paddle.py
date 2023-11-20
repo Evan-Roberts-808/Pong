@@ -4,7 +4,7 @@ import pygame
 class Paddle:
     VEL = 7
     WIDTH = 20
-    HEIGHT = 100
+    HEIGHT = 150
 
     def __init__(self, x, y):
         self.x = self.original_x = x

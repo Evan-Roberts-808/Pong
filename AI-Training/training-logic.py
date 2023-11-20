@@ -111,7 +111,7 @@ def run_neat(config):
     p.add_reporter(stats)
     p.add_reporter(neat.Checkpointer(1))
 
-    winner = p.run(eval_genomes, 50)
+    winner = p.run(eval_genomes, 75)
     with open("best.pickle", "wb") as f:
         pickle.dump(winner, f)
 
@@ -132,5 +132,5 @@ if __name__ == "__main__":
     config = neat.Config(neat.DefaultGenome, neat.DefaultReproduction,
                          neat.DefaultSpeciesSet, neat.DefaultStagnation,
                          config_path)
-    run_neat(config)
-    # test_ai(config)
+    # run_neat(config)
+    test_ai(config)
