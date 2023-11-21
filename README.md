@@ -38,15 +38,33 @@ pip install -r requirements.txt
 python menu.py
 ```
 
-### Running the Executable
+### Running the Executable (Windows)
 
 1. Follow the directions above to clone the repo, or click the green "Code" button and select "Download ZIP". If necessary, unzip the downloaded file.
 
-2. In your file explorer, open the Project folder, and navigate into the nested Pong folder.
+2. In your file explorer, open the Project folder, and navigate into the nested Windows folder.
 
-3. Run the Pong.exe executable to play the game.
+3. Run the pong.exe executable to play the game.
 
 <b>Note:</b> Due to it not being a widely distributed executable, your anti virus may stop to scan the file before the game can be launched.
+
+### Running the Executable (macOS)
+
+1. Follow the directions above to clone the repo, or click the green "Code" button and select "Download ZIP". If necessary, unzip the downloaded file.
+
+2. In your file explorer, open the Project folder, and navigate into the nested Mac folder.
+
+3. Locate the "pong" file.
+
+4. Right-click on the "pong" file and select "Open." You might encounter a security prompt because the application is from an unidentified developer.
+
+5. To open the application, right-click on it again and select "Open" from the context menu.
+
+6. If the antivirus software on your macOS system flags the application, you may need to allow the application to run. You can do this through the antivirus software settings.
+
+7. Run the "pong" executable to play the game.
+
+<b>Note:</b> macOS has strict security measures for applications from unidentified developers, and you might need to override these settings to run the executable.
 
 ## Features
 - Interactive Pong Gameplay: Enjoy a classic Pong experience with both single-player mode against AI and a thrilling two-player mode for competitive matches.
